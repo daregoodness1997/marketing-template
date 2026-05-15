@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "title": "Your Brand – Váš slogan",
+    "description": "Stručný popis vašeho produktu nebo služby pro vyhledávače a sdílení na sociálních sítích."
+  },
+  "nav": {
+    "features": "Funkce",
+    "audience": "Pro koho",
+    "integrations": "Integrace",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "signin": "Přihlásit se"
+  },
+  "hero": {
+    "tagline": "Slogan vašeho produktu",
+    "titleLine1": "Váš",
+    "titleAccent": "Produkt",
+    "titleLine2": "Zde.",
+    "subtitle": "Přesvědčivý jednořádkový popis, který vysvětluje, co váš produkt dělá a proč je důležitý.",
+    "cta_demo": "Domluvit ukázku",
+    "integration_label": "Integrace s",
+    "integration_value": "Vaše Platforma",
+    "stat1_value": "<50ms",
+    "stat1_label": "Latence",
+    "stat2_value": "99.9%",
+    "stat2_label": "Dostupnost",
+    "stat3_value": "10k+",
+    "stat3_label": "Uživatelů",
+    "demo_title": "live_dashboard_v2",
+    "demo_metric1": "Tržby",
+    "demo_metric1_value": "2,4M Kč",
+    "demo_metric2": "Růst",
+    "demo_metric2_value": "+18%"
+  },
+  "features": {
+    "title": "Vše co potřebujete na jednom místě",
+    "feature1": {
+      "title": "Funkce jedna",
+      "desc": "Krátký popis první funkce a jejího přínosu."
+    },
+    "feature2": {
+      "title": "Funkce dva",
+      "desc": "Krátký popis druhé funkce a jejího přínosu."
+    },
+    "feature3": {
+      "title": "Funkce tři",
+      "desc": "Krátký popis třetí funkce a jejího přínosu."
+    },
+    "feature4": {
+      "title": "Funkce čtyři",
+      "desc": "Krátký popis čtvrté funkce a jejího přínosu."
+    },
+    "feature5": {
+      "title": "Funkce pět",
+      "desc": "Krátký popis páté funkce a jejího přínosu."
+    },
+    "feature6": {
+      "title": "Funkce šest",
+      "desc": "Krátký popis šesté funkce a jejího přínosu."
+    }
+  },
+  "audience": {
+    "title": "Pro koho je to určeno?",
+    "subtitle": "Naše platforma je navržena pro různé role a velikosti týmů.",
+    "group1": {
+      "title": "Skupina jedna",
+      "desc": "Popis první cílové skupiny a jak z toho profituje."
+    },
+    "group2": {
+      "title": "Skupina dva",
+      "desc": "Popis druhé cílové skupiny a jak z toho profituje."
+    },
+    "group3": {
+      "title": "Skupina tři",
+      "desc": "Popis třetí cílové skupiny a jak z toho profituje."
+    }
+  },
+  "integrations": {
+    "tagline": "Ecosystem",
+    "title": "Propojeno s vaším světem",
+    "integration1_title": "Nativní integrace",
+    "integration1_desc": "Bezproblémové propojení s vašimi stávajícími nástroji a workflow.",
+    "integration2_title": "Open API",
+    "integration2_desc": "Flexibilní API pro vlastní integrace s libovolným systémem."
+  },
+  "faq": {
+    "title": "Často kladené otázky",
+    "q1": "Co je Your Brand?",
+    "a1": "Your Brand je platforma, která vám pomůže dosáhnout X prostřednictvím Y.",
+    "q2": "Jak funguje integrace?",
+    "a2": "Naše platforma se propojuje přímo s vašimi stávajícími nástroji přes standardizované API a protokoly.",
+    "q3": "Je platforma bezpečná?",
+    "a3": "Ano, bezpečnost je naší prioritou. Splňujeme přísné bezpečnostní standardy a využíváme šifrovaný přenos dat."
+  },
+  "contact": {
+    "title": "Máte dotazy?",
+    "subtitle": "Napište nám a my se vám ozveme zpět.",
+    "name": "Jméno",
+    "email": "E-mail",
+    "company": "Společnost",
+    "company_placeholder": "Název vaší společnosti",
+    "phone": "Telefon",
+    "message": "Zpráva",
+    "send": "Odeslat",
+    "retry": "Zkusit znovu",
+    "send_another": "Odeslat další zprávu",
+    "success": "Vaši zprávu jsme přijali a brzy se vám ozveme.",
+    "success_title": "Zpráva odeslána!",
+    "error": "Při odesílání došlo k chybě. Zkuste to prosím později.",
+    "error_validation": "Zkontrolujte prosím zadané údaje a zkuste to znovu.",
+    "error_rate_limit": "Příliš mnoho požadavků. Počkejte chvíli a zkuste to znovu.",
+    "error_network": "Chyba sítě. Zkontrolujte připojení a zkuste to znovu.",
+    "characters_hint": "Max {max} znaků",
+    "validation_name_min": "Jméno musí mít alespoň 2 znaky.",
+    "validation_name_max": "Jméno může mít nejvýše 100 znaků.",
+    "validation_email_required": "E-mail je povinný.",
+    "validation_email_invalid": "Zadejte platnou e-mailovou adresu.",
+    "validation_company_max": "Název společnosti může mít nejvýše 100 znaků.",
+    "validation_phone_max": "Telefonní číslo je příliš dlouhé.",
+    "validation_message_min": "Zpráva musí mít alespoň 10 znaků.",
+    "validation_message_max": "Zpráva může mít nejvýše 2000 znaků."
+  },
+  "demo": {
+    "title": "Vyzkoušet demo platformy",
+    "step1": "Základní údaje",
+    "step2": "O vaší společnosti",
+    "step3": "Požadavky",
+    "company_size": "Velikost společnosti",
+    "needs": "Co vás nejvíce zajímá?",
+    "success": "Děkujeme! Náš tým vás bude brzy kontaktovat.",
+    "fullName": "Celé jméno",
+    "workEmail": "Pracovní e-mail",
+    "companyName": "Název společnosti",
+    "employees_small": "1–10 zaměstnanců",
+    "employees_medium": "11–50 zaměstnanců",
+    "employees_large": "50+ zaměstnanců",
+    "continue": "Pokračovat",
+    "back": "Zpět",
+    "next": "Další",
+    "submit": "Odeslat požadavek",
+    "close": "Zavřít okno"
+  },
+  "cookie": {
+    "title": "Soukromí a soubory cookies",
+    "desc": "Tento web používá soubory cookies k zajištění správné funkčnosti a analýze návštěvnosti. Můžete si vybrat, které kategorie povolíte.",
+    "accept": "Přijmout vše",
+    "necessary": "Jen nezbytné",
+    "save": "Uložit předvolby",
+    "settings": "Nastavení cookies",
+    "cat_necessary": "Nezbytné",
+    "cat_necessary_desc": "Nutné pro správné fungování webu. Nelze vypnout.",
+    "cat_analytics": "Analytické",
+    "cat_analytics_desc": "Pomáhají nám porozumět, jak návštěvníci pracují s webem.",
+    "cat_marketing": "Marketingové",
+    "cat_marketing_desc": "Slouží k zobrazování relevantních reklam a měření účinnosti kampaní.",
+    "cat_personalization": "Personalizace",
+    "cat_personalization_desc": "Umožňují přizpůsobit obsah a reklamy vašim zájmům."
+  },
+  "footer": {
+    "description": "Stručný popis vašeho brandu a toho, co dělá. Nahraďte toto vaším skutečným textem.",
+    "links_title": "Odkazy",
+    "contact_title": "Kontakt",
+    "privacy": "Ochrana osobních údajů",
+    "terms": "Obchodní podmínky",
+    "rights": "Všechna práva vyhrazena."
+  },
+  "a11y": {
+    "skip_to_content": "Přeskočit na hlavní obsah"
+  }
+}
