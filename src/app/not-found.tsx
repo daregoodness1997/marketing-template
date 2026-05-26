@@ -20,6 +20,54 @@ const copy: Record<
     body: "Sorry, the page you are looking for does not exist or has been moved.",
     cta: "Back to homepage",
   },
+  fr: {
+    title: "404 – Page introuvable",
+    heading: "Page introuvable",
+    body: "Desole, la page que vous recherchez n'existe pas ou a ete deplacee.",
+    cta: "Retour a l'accueil",
+  },
+  es: {
+    title: "404 – Pagina no encontrada",
+    heading: "Pagina no encontrada",
+    body: "Lo sentimos, la pagina que buscas no existe o ha sido movida.",
+    cta: "Volver al inicio",
+  },
+  pt: {
+    title: "404 – Pagina nao encontrada",
+    heading: "Pagina nao encontrada",
+    body: "Desculpe, a pagina que procura nao existe ou foi movida.",
+    cta: "Voltar para a pagina inicial",
+  },
+  sw: {
+    title: "404 – Ukurasa haujapatikana",
+    heading: "Ukurasa haujapatikana",
+    body: "Samahani, ukurasa unaoutafuta haupo au umehamishwa.",
+    cta: "Rudi ukurasa wa mwanzo",
+  },
+  yo: {
+    title: "404 – A ko ri oju-iwe",
+    heading: "A ko ri oju-iwe",
+    body: "Ma binu, oju-iwe ti o n wa ko si tabi a ti gbe e.",
+    cta: "Pada si ile",
+  },
+  ha: {
+    title: "404 – Ba a samu shafin ba",
+    heading: "Ba a samu shafin ba",
+    body: "Yi hakuri, shafin da kake nema baya nan ko an matsar da shi.",
+    cta: "Koma shafin farko",
+  },
+  ja: {
+    title: "404 - Page Not Found",
+    heading: "Page not found",
+    body: "Sorry, the page you are looking for does not exist or has been moved.",
+    cta: "Back to homepage",
+  },
+  zh: {
+    title: "404 - Page Not Found",
+    heading: "Page not found",
+    body: "Sorry, the page you are looking for does not exist or has been moved.",
+    cta: "Back to homepage",
+  },
 };
 
 function detectLocale(): Locale {

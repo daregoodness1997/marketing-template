@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import type { Locale } from "@/i18n/routing";
+import { routing, type Locale } from "@/i18n/routing";
 
 // ─── Constants — CHANGE THESE PER PROJECT ───────────────────────────────────
 export const SITE_URL =
@@ -19,11 +19,17 @@ export function localeUrl(locale: Locale, path = "/"): string {
 // ─── Alternates & Canonical ─────────────────────────────────────────────────
 
 export function buildAlternates(locale: Locale) {
+  const languages = Object.fromEntries(
+    routing.locales.map((supportedLocale) => [
+      supportedLocale,
+      localeUrl(supportedLocale as Locale),
+    ]),
+  ) as Record<Locale, string>;
+
   return {
     canonical: localeUrl(locale),
     languages: {
-      cs: localeUrl("cs"),
-      en: localeUrl("en"),
+      ...languages,
       "x-default": localeUrl("cs"),
     },
   };
@@ -59,7 +65,20 @@ export function generatePageMetadata({
   title,
   description,
 }: MetadataInput): Metadata {
-  const ogLocale = locale === "cs" ? "cs_CZ" : "en_US";
+  const ogLocaleByLanguage: Record<Locale, string> = {
+    cs: "cs_CZ",
+    en: "en_US",
+    fr: "fr_FR",
+    es: "es_ES",
+    pt: "pt_PT",
+    sw: "sw_KE",
+    yo: "yo_NG",
+    ha: "ha_NG",
+    ja: "ja_JP",
+    zh: "zh_CN",
+  };
+
+  const ogLocale = ogLocaleByLanguage[locale] ?? "en_US";
 
   return {
     title,
@@ -99,7 +118,18 @@ export function organizationSchema() {
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
-      availableLanguage: ["Czech", "English"],
+      availableLanguage: [
+        "Czech",
+        "English",
+        "French",
+        "Spanish",
+        "Portuguese",
+        "Swahili",
+        "Yoruba",
+        "Hausa",
+        "Japanese",
+        "Chinese",
+      ],
     },
   });
 }
@@ -109,7 +139,7 @@ export function webSiteSchema() {
     "@type": "WebSite",
     name: SITE_NAME,
     url: SITE_URL,
-    inLanguage: ["cs", "en"],
+    inLanguage: [...routing.locales],
     publisher: { "@type": "Organization", name: SITE_NAME },
   });
 }

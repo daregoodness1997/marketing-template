@@ -63,7 +63,7 @@ export default async function HomePage({
     { name: SITE_NAME, url: SITE_URL },
     {
       name: locale === "cs" ? "Domů" : "Home",
-      url: locale === "cs" ? `${SITE_URL}/` : `${SITE_URL}/en/`,
+      url: locale === "cs" ? `${SITE_URL}/` : `${SITE_URL}/${locale}/`,
     },
   ];
 

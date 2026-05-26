@@ -1,0 +1,202 @@
+{
+  "metadata": {
+    "title": "Your Brand – Tagline Goes Here",
+    "description": "A brief description of your product or service for search engines and social sharing."
+  },
+  "nav": {
+    "features": "Features",
+    "audience": "For Whom",
+    "integrations": "Integrations",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "blog": "Blog",
+    "signin": "Sign in"
+  },
+  "hero": {
+    "tagline": "Your Product Tagline",
+    "titleLine1": "Your",
+    "titleAccent": "Product",
+    "titleLine2": "Name.",
+    "subtitle": "A compelling one-liner that explains what your product does and why it matters.",
+    "cta_demo": "Request a Demo",
+    "integration_label": "Integrates with",
+    "integration_value": "Your Platform",
+    "stat1_value": "<50ms",
+    "stat1_label": "Latency",
+    "stat2_value": "99.9%",
+    "stat2_label": "Uptime",
+    "stat3_value": "10k+",
+    "stat3_label": "Users",
+    "demo_title": "live_dashboard_v2",
+    "demo_metric1": "Revenue",
+    "demo_metric1_value": "$2.4M",
+    "demo_metric2": "Growth",
+    "demo_metric2_value": "+18%"
+  },
+  "features": {
+    "title": "Everything you need in one platform",
+    "feature1": {
+      "title": "Feature One",
+      "desc": "Short description of the first feature and its benefit."
+    },
+    "feature2": {
+      "title": "Feature Two",
+      "desc": "Short description of the second feature and its benefit."
+    },
+    "feature3": {
+      "title": "Feature Three",
+      "desc": "Short description of the third feature and its benefit."
+    },
+    "feature4": {
+      "title": "Feature Four",
+      "desc": "Short description of the fourth feature and its benefit."
+    },
+    "feature5": {
+      "title": "Feature Five",
+      "desc": "Short description of the fifth feature and its benefit."
+    },
+    "feature6": {
+      "title": "Feature Six",
+      "desc": "Short description of the sixth feature and its benefit."
+    }
+  },
+  "audience": {
+    "title": "Who is this for?",
+    "subtitle": "Our platform is designed for various roles and team sizes.",
+    "group1": {
+      "title": "Group One",
+      "desc": "Description of the first target audience and how they benefit."
+    },
+    "group2": {
+      "title": "Group Two",
+      "desc": "Description of the second target audience and how they benefit."
+    },
+    "group3": {
+      "title": "Group Three",
+      "desc": "Description of the third target audience and how they benefit."
+    }
+  },
+  "integrations": {
+    "tagline": "Ecosystem",
+    "title": "Connected to your world",
+    "integration1_title": "Native Integrations",
+    "integration1_desc": "Seamless connection with your existing tools and workflows.",
+    "integration2_title": "Open API",
+    "integration2_desc": "Flexible API for custom integrations with any system."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "What is Your Brand?",
+    "a1": "Your Brand is a platform that helps you achieve X by doing Y.",
+    "q2": "How does integration work?",
+    "a2": "Our platform connects directly with your existing tools via standardized APIs and protocols.",
+    "q3": "Is the platform secure?",
+    "a3": "Yes, security is our priority. We meet strict security standards and use encrypted data transfer."
+  },
+  "contact": {
+    "title": "Have questions?",
+    "subtitle": "Write to us and we will get back to you.",
+    "name": "Name",
+    "email": "Email",
+    "company": "Company",
+    "company_placeholder": "Your company name",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send",
+    "retry": "Try again",
+    "send_another": "Send another message",
+    "success": "We received your message and will get back to you shortly.",
+    "success_title": "Message sent!",
+    "error": "An error occurred while sending. Please try again later.",
+    "error_validation": "Please check your input and try again.",
+    "error_rate_limit": "Too many requests. Please wait a moment and try again.",
+    "error_network": "Network error. Please check your connection and try again.",
+    "characters_hint": "Max {max} characters",
+    "validation_name_min": "Name must be at least 2 characters.",
+    "validation_name_max": "Name must be at most 100 characters.",
+    "validation_email_required": "Email is required.",
+    "validation_email_invalid": "Enter a valid email address.",
+    "validation_company_max": "Company name must be at most 100 characters.",
+    "validation_phone_max": "Phone number is too long.",
+    "validation_message_min": "Message must be at least 10 characters.",
+    "validation_message_max": "Message must be at most 2000 characters."
+  },
+  "demo": {
+    "title": "Try the platform demo",
+    "step1": "Basic Info",
+    "step2": "About Company",
+    "step3": "Requirements",
+    "company_size": "Company Size",
+    "needs": "What interests you most?",
+    "success": "Thank you! Our team will contact you soon.",
+    "fullName": "Full Name",
+    "workEmail": "Work Email",
+    "companyName": "Company Name",
+    "employees_small": "1–10 Employees",
+    "employees_medium": "11–50 Employees",
+    "employees_large": "50+ Employees",
+    "continue": "Continue",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit Request",
+    "close": "Close Window"
+  },
+  "cookie": {
+    "title": "Privacy and Cookies",
+    "desc": "This website uses cookies to ensure proper functionality and analyze traffic. You can choose which categories to allow.",
+    "accept": "Accept all",
+    "necessary": "Necessary only",
+    "save": "Save preferences",
+    "settings": "Cookie settings",
+    "cat_necessary": "Necessary",
+    "cat_necessary_desc": "Required for the website to function. Cannot be disabled.",
+    "cat_analytics": "Analytics",
+    "cat_analytics_desc": "Help us understand how visitors interact with the website.",
+    "cat_marketing": "Marketing",
+    "cat_marketing_desc": "Used to display relevant advertisements and measure campaign effectiveness.",
+    "cat_personalization": "Personalization",
+    "cat_personalization_desc": "Allow content and ads to be tailored to your interests."
+  },
+  "footer": {
+    "description": "A brief description of your brand and what it does. Replace this with your actual footer copy.",
+    "links_title": "Quick Links",
+    "contact_title": "Contact Us",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "rights": "All rights reserved."
+  },
+  "a11y": {
+    "skip_to_content": "Skip to main content"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Insights, updates, and guides from our team.",
+    "read_more": "Read more",
+    "back_to_blog": "Back to blog",
+    "min_read": "{minutes} min read",
+    "published": "Published {date}",
+    "posts": {
+      "getting-started": {
+        "title": "Getting Started with Your Brand",
+        "excerpt": "Learn how to set up your account and start using the platform in minutes.",
+        "date": "2026-05-20",
+        "readTime": "5",
+        "content": "Welcome to Your Brand! This guide walks you through the initial setup process.\n\nFirst, create your account by visiting our dashboard. You will be guided through a simple onboarding flow that helps you configure your workspace.\n\nOnce set up, you can invite team members, connect your existing tools via our integrations page, and start building your first project.\n\nOur platform is designed to be intuitive, but if you need help, our support team is available 24/7."
+      },
+      "best-practices": {
+        "title": "Best Practices for Team Collaboration",
+        "excerpt": "Discover proven strategies to improve your team's productivity and communication.",
+        "date": "2026-05-15",
+        "readTime": "7",
+        "content": "Effective collaboration is the cornerstone of any successful team. Here are our top recommendations.\n\nEstablish clear communication channels from the start. Use dedicated spaces for different topics to avoid information overload.\n\nSet up automated workflows to reduce repetitive tasks. Our platform supports custom automation rules that can save your team hours each week.\n\nRegularly review your processes and gather feedback from your team. Continuous improvement leads to better outcomes."
+      },
+      "product-update": {
+        "title": "Product Update: What's New in v2.0",
+        "excerpt": "Explore the latest features and improvements in our newest release.",
+        "date": "2026-05-10",
+        "readTime": "4",
+        "content": "We are excited to announce the release of version 2.0, packed with features our users have been requesting.\n\nThe redesigned dashboard provides a clearer overview of your projects and metrics. Navigation has been simplified based on user feedback.\n\nNew integration options allow you to connect with even more third-party tools. We have also improved performance across the board, with page loads now 40% faster.\n\nSecurity has been enhanced with two-factor authentication and improved access controls."
+      }
+    }
+  }
+}

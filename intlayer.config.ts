@@ -1,6 +1,25 @@
 import { type IntlayerConfig } from "intlayer";
 import { syncJSON } from "@intlayer/sync-json-plugin";
 
+const projectLocales = [
+  "cs",
+  "en",
+  "fr",
+  "es",
+  "pt",
+  "sw",
+  "yo",
+  "ha",
+  "ja",
+  "zh",
+] as const;
+type ConfigInternationalization = NonNullable<
+  IntlayerConfig["internationalization"]
+>;
+
+const typedProjectLocales =
+  projectLocales as unknown as ConfigInternationalization["locales"];
+
 const aiProvider: IntlayerConfig["ai"] = process.env.ANTHROPIC_API_KEY
   ? {
       provider: "anthropic",
@@ -21,7 +40,7 @@ const aiProvider: IntlayerConfig["ai"] = process.env.ANTHROPIC_API_KEY
 
 const config: IntlayerConfig = {
   internationalization: {
-    locales: ["cs", "en"],
+    locales: typedProjectLocales,
     defaultLocale: "cs",
   },
   ai: aiProvider,

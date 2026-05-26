@@ -13,6 +13,19 @@ import type { Locale } from "@/i18n/routing";
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "#";
 
+const languageOptions: Array<{ code: Locale; label: string; short: string }> = [
+  { code: "cs", label: "Čeština", short: "CS" },
+  { code: "en", label: "English", short: "EN" },
+  { code: "fr", label: "Français", short: "FR" },
+  { code: "es", label: "Español", short: "ES" },
+  { code: "pt", label: "Português", short: "PT" },
+  { code: "sw", label: "Kiswahili", short: "SW" },
+  { code: "yo", label: "Yoruba", short: "YO" },
+  { code: "ha", label: "Hausa", short: "HA" },
+  { code: "ja", label: "日本語", short: "JA" },
+  { code: "zh", label: "中文", short: "ZH" },
+];
+
 export function Header() {
   const t = useTranslations("nav");
   const locale = useLocale() as Locale;
@@ -57,6 +70,8 @@ export function Header() {
   };
 
   const switchLocale = (newLocale: Locale) => {
+    if (newLocale === locale) return;
+
     try {
       localStorage.setItem("site_locale", newLocale);
       document.cookie = `site_locale=${newLocale};path=/;max-age=${60 * 60 * 24 * 365};SameSite=Lax`;
@@ -124,36 +139,23 @@ export function Header() {
 
         <div className="hidden md:flex items-center gap-6">
           <div
-            className="flex items-center border border-slate-200 rounded-full px-1 py-1 bg-slate-100/50"
+            className="flex items-center border border-slate-200 rounded-full px-3 py-1 bg-slate-100/50"
             role="group"
             aria-label="Language"
           >
-            <button
-              onClick={() => switchLocale("cs")}
-              className={cn(
-                "px-3 py-1 text-xs font-bold rounded-full transition-all",
-                locale === "cs"
-                  ? "bg-white text-primary shadow-sm"
-                  : "text-slate-400",
-              )}
-              aria-current={locale === "cs" ? "true" : undefined}
-              aria-label="Čeština"
+            <Globe className="w-4 h-4 text-slate-500 mr-2" aria-hidden="true" />
+            <select
+              value={locale}
+              onChange={(e) => switchLocale(e.target.value as Locale)}
+              aria-label="Language"
+              className="bg-transparent text-xs font-bold text-slate-700 focus:outline-none"
             >
-              CS
-            </button>
-            <button
-              onClick={() => switchLocale("en")}
-              className={cn(
-                "px-3 py-1 text-xs font-bold rounded-full transition-all",
-                locale === "en"
-                  ? "bg-white text-primary shadow-sm"
-                  : "text-slate-400",
-              )}
-              aria-current={locale === "en" ? "true" : undefined}
-              aria-label="English"
-            >
-              EN
-            </button>
+              {languageOptions.map((option) => (
+                <option key={option.code} value={option.code}>
+                  {option.short}
+                </option>
+              ))}
+            </select>
           </div>
 
           <a
@@ -206,13 +208,25 @@ export function Header() {
             ),
           )}
           <div className="pt-4 border-t border-slate-100 flex flex-col gap-4">
-            <button
-              onClick={() => switchLocale(locale === "cs" ? "en" : "cs")}
-              className="flex items-center gap-2 text-lg font-medium text-slate-900"
-            >
-              <Globe className="w-5 h-5" aria-hidden="true" />
-              {locale === "cs" ? "English" : "Čeština"}
-            </button>
+            <div className="flex items-start gap-2">
+              <Globe className="w-5 h-5 mt-1" aria-hidden="true" />
+              <div className="grid grid-cols-2 gap-2 w-full">
+                {languageOptions.map((option) => (
+                  <button
+                    key={option.code}
+                    onClick={() => switchLocale(option.code)}
+                    className={cn(
+                      "text-left rounded-lg px-3 py-2 border text-sm font-medium",
+                      locale === option.code
+                        ? "bg-slate-900 text-white border-slate-900"
+                        : "bg-white text-slate-900 border-slate-200",
+                    )}
+                  >
+                    {option.label}
+                  </button>
+                ))}
+              </div>
+            </div>
             <a
               href={APP_URL}
               className="w-full bg-primary text-white py-4 rounded-xl text-center font-bold text-lg"
