@@ -26,7 +26,10 @@ cp .env.example .env.local
 # 4. Start dev server
 npm run dev
 
-# 5. Build static export
+# 5. Fill missing Intlayer translations/keys
+npx intlayer fill
+
+# 6. Build static export
 npm run build
 ```
 
@@ -39,6 +42,7 @@ This project uses `intlayer.config.ts` to connect message files and AI-assisted 
 - Messages are read from `src/messages/<locale>.json` via `@intlayer/sync-json-plugin`
 - Current locales are configured as `cs` and `en`
 - Dev command uses Intlayer watch mode: `npm run dev` runs `intlayer watch --with 'next dev'`
+- Run `npx intlayer fill` after adding new copy keys so locale message files stay synchronized
 
 Optional AI provider environment variables for Intlayer:
 

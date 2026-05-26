@@ -27,6 +27,12 @@ cp .env.example .env.local
 npm run dev
 ```
 
+4. Sync missing Intlayer keys/translations:
+
+```bash
+npx intlayer fill
+```
+
 ## Project Basics
 
 - Framework: Next.js 16
@@ -40,6 +46,7 @@ npm run dev
 - Intlayer configuration is in `intlayer.config.ts`.
 - Locale message files are loaded from `src/messages/<locale>.json`.
 - Keep `src/messages/cs.json` and `src/messages/en.json` aligned when adding or renaming keys.
+- Run `npx intlayer fill` after adding or updating translatable copy.
 - Run development with Intlayer watch enabled via `npm run dev`.
 
 If you use AI-assisted Intlayer workflows locally, set one of these environment variables:
@@ -56,13 +63,34 @@ If you use AI-assisted Intlayer workflows locally, set one of these environment 
    - `src/messages/cs.json`
    - `src/messages/en.json`
 4. If you add a locale, also update `internationalization.locales` in `intlayer.config.ts`.
-5. Run checks before committing:
+5. Run `npx intlayer fill` if you changed translation keys or copy.
+6. Run checks before committing:
 
 ```bash
 npm run lint
 npm run typecheck
 npm run build
 ```
+
+## Branch Naming Guidelines
+
+Use lowercase branch names with hyphens and one of these prefixes:
+
+- `feat/` for new features
+- `fix/` for bug fixes
+- `docs/` for documentation-only changes
+- `refactor/` for internal code improvements without behavior changes
+- `chore/` for tooling, config, or maintenance work
+
+Recommended format:
+
+`<type>/<short-description>`
+
+Examples:
+
+- `feat/blog-listing-page`
+- `fix/contact-form-validation`
+- `docs/intlayer-contribution-notes`
 
 ## Code Standards
 
