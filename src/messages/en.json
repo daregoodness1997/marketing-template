@@ -9,6 +9,7 @@
     "integrations": "Integrations",
     "faq": "FAQ",
     "contact": "Contact",
+    "blog": "Blog",
     "signin": "Sign in"
   },
   "hero": {
@@ -166,5 +167,36 @@
   },
   "a11y": {
     "skip_to_content": "Skip to main content"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Insights, updates, and guides from our team.",
+    "read_more": "Read more",
+    "back_to_blog": "Back to blog",
+    "min_read": "{minutes} min read",
+    "published": "Published {date}",
+    "posts": {
+      "getting-started": {
+        "title": "Getting Started with Your Brand",
+        "excerpt": "Learn how to set up your account and start using the platform in minutes.",
+        "date": "2026-05-20",
+        "readTime": "5",
+        "content": "Welcome to Your Brand! This guide walks you through the initial setup process.\n\nFirst, create your account by visiting our dashboard. You will be guided through a simple onboarding flow that helps you configure your workspace.\n\nOnce set up, you can invite team members, connect your existing tools via our integrations page, and start building your first project.\n\nOur platform is designed to be intuitive, but if you need help, our support team is available 24/7."
+      },
+      "best-practices": {
+        "title": "Best Practices for Team Collaboration",
+        "excerpt": "Discover proven strategies to improve your team's productivity and communication.",
+        "date": "2026-05-15",
+        "readTime": "7",
+        "content": "Effective collaboration is the cornerstone of any successful team. Here are our top recommendations.\n\nEstablish clear communication channels from the start. Use dedicated spaces for different topics to avoid information overload.\n\nSet up automated workflows to reduce repetitive tasks. Our platform supports custom automation rules that can save your team hours each week.\n\nRegularly review your processes and gather feedback from your team. Continuous improvement leads to better outcomes."
+      },
+      "product-update": {
+        "title": "Product Update: What's New in v2.0",
+        "excerpt": "Explore the latest features and improvements in our newest release.",
+        "date": "2026-05-10",
+        "readTime": "4",
+        "content": "We are excited to announce the release of version 2.0, packed with features our users have been requesting.\n\nThe redesigned dashboard provides a clearer overview of your projects and metrics. Navigation has been simplified based on user feedback.\n\nNew integration options allow you to connect with even more third-party tools. We have also improved performance across the board, with page loads now 40% faster.\n\nSecurity has been enhanced with two-factor authentication and improved access controls."
+      }
+    }
   }
 }

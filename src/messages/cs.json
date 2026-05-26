@@ -9,6 +9,7 @@
     "integrations": "Integrace",
     "faq": "FAQ",
     "contact": "Kontakt",
+    "blog": "Blog",
     "signin": "Přihlásit se"
   },
   "hero": {
@@ -166,5 +167,36 @@
   },
   "a11y": {
     "skip_to_content": "Přeskočit na hlavní obsah"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Postřehy, novinky a návody od našeho týmu.",
+    "read_more": "Číst více",
+    "back_to_blog": "Zpět na blog",
+    "min_read": "{minutes} min čtení",
+    "published": "Publikováno {date}",
+    "posts": {
+      "getting-started": {
+        "title": "Začínáme s Your Brand",
+        "excerpt": "Zjistěte, jak si nastavit účet a začít platformu používat během několika minut.",
+        "date": "2026-05-20",
+        "readTime": "5",
+        "content": "Vítejte v Your Brand! Tento průvodce vás provede úvodním nastavením.\n\nNejprve si vytvořte účet na našem dashboardu. Budete provedeni jednoduchým procesem, který vám pomůže nakonfigurovat váš pracovní prostor.\n\nPo nastavení můžete pozvat členy týmu, propojit své stávající nástroje přes stránku integrací a začít budovat svůj první projekt.\n\nNaše platforma je navržena tak, aby byla intuitivní, ale pokud potřebujete pomoc, náš tým podpory je k dispozici 24/7."
+      },
+      "best-practices": {
+        "title": "Osvědčené postupy pro týmovou spolupráci",
+        "excerpt": "Objevte ověřené strategie pro zlepšení produktivity a komunikace vašeho týmu.",
+        "date": "2026-05-15",
+        "readTime": "7",
+        "content": "Efektivní spolupráce je základem každého úspěšného týmu. Zde jsou naše hlavní doporučení.\n\nOd začátku nastavte jasné komunikační kanály. Pro různá témata používejte vyhrazené prostory, abyste předešli zahlcení informacemi.\n\nNastavte automatizované workflow pro snížení opakujících se úkolů. Naše platforma podporuje vlastní automatizační pravidla, která mohou vašemu týmu ušetřit hodiny týdně.\n\nPravidelně kontrolujte své procesy a sbírejte zpětnou vazbu od týmu. Neustálé zlepšování vede k lepším výsledkům."
+      },
+      "product-update": {
+        "title": "Aktualizace produktu: Co je nového ve verzi 2.0",
+        "excerpt": "Prozkoumejte nejnovější funkce a vylepšení v našem nejnovějším vydání.",
+        "date": "2026-05-10",
+        "readTime": "4",
+        "content": "S nadšením oznamujeme vydání verze 2.0, plné funkcí, které si naši uživatelé přáli.\n\nPřepracovaný dashboard poskytuje jasnější přehled o vašich projektech a metrikách. Navigace byla zjednodušena na základě zpětné vazby uživatelů.\n\nNové možnosti integrace umožňují propojení s ještě více nástroji třetích stran. Také jsme zlepšili výkon napříč celou platformou – stránky se nyní načítají o 40 % rychleji.\n\nBezpečnost byla posílena dvoufaktorovou autentizací a vylepšeným řízením přístupu."
+      }
+    }
   }
 }

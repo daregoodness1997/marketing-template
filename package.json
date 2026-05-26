@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "intlayer watch --with 'next dev'",
     "build": "next build",
     "postbuild": "cp out/cs/index.html out/index.html && cp web.config out/web.config",
     "start": "next start",
@@ -17,6 +17,7 @@
     "motion": "^12.23.0",
     "next": "^16.0.0",
     "next-intl": "^4.12.0",
+    "next-intlayer": "^8.10.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.75.0",
@@ -25,12 +26,14 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
+    "@intlayer/sync-json-plugin": "^8.9.7",
     "@tailwindcss/postcss": "^4.1.0",
     "@types/node": "^22.14.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "eslint": "^9.0.0",
     "eslint-config-next": "^16.0.0",
+    "intlayer": "^8.9.7",
     "tailwindcss": "^4.1.0",
     "typescript": "^5.8.0"
   }

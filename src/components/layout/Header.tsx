@@ -8,6 +8,7 @@ import { trackCtaClick, trackLanguageSwitch } from "@/lib/analytics";
 import { Globe, Menu, X } from "lucide-react";
 import { motion } from "motion/react";
 import { Logo } from "@/components/ui/Logo";
+import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "#";
@@ -37,12 +38,13 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navItems = [
+  const navItems: Array<{ name: string; id: string; href?: string }> = [
     { name: t("features"), id: "features" },
     { name: t("audience"), id: "audience" },
     { name: t("integrations"), id: "integrations" },
     { name: t("faq"), id: "faq" },
     { name: t("contact"), id: "contact" },
+    { name: t("blog"), id: "blog", href: "/blog" },
   ];
 
   const handleNavClick = (
@@ -96,17 +98,28 @@ export function Header() {
           className="hidden md:flex items-center gap-8"
           aria-label="Main navigation"
         >
-          {navItems.map((item) => (
-            <a
-              key={item.id}
-              href={`#${item.id}`}
-              onClick={(e) => handleNavClick(e, item.id)}
-              className="text-xs font-bold uppercase tracking-widest text-slate-600 hover:text-primary transition-colors relative group"
-            >
-              {item.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
-            </a>
-          ))}
+          {navItems.map((item) =>
+            item.href ? (
+              <Link
+                key={item.id}
+                href={item.href}
+                className="text-xs font-bold uppercase tracking-widest text-slate-600 hover:text-primary transition-colors relative group"
+              >
+                {item.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
+              </Link>
+            ) : (
+              <a
+                key={item.id}
+                href={`#${item.id}`}
+                onClick={(e) => handleNavClick(e, item.id)}
+                className="text-xs font-bold uppercase tracking-widest text-slate-600 hover:text-primary transition-colors relative group"
+              >
+                {item.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
+              </a>
+            ),
+          )}
         </nav>
 
         <div className="hidden md:flex items-center gap-6">
@@ -171,16 +184,27 @@ export function Header() {
           className="absolute top-full left-0 right-0 bg-white border-b border-slate-200 p-6 md:hidden flex flex-col gap-4 shadow-xl"
           aria-label="Mobile navigation"
         >
-          {navItems.map((item) => (
-            <a
-              key={item.id}
-              href={`#${item.id}`}
-              className="text-lg font-medium text-slate-900"
-              onClick={(e) => handleNavClick(e, item.id)}
-            >
-              {item.name}
-            </a>
-          ))}
+          {navItems.map((item) =>
+            item.href ? (
+              <Link
+                key={item.id}
+                href={item.href}
+                className="text-lg font-medium text-slate-900"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {item.name}
+              </Link>
+            ) : (
+              <a
+                key={item.id}
+                href={`#${item.id}`}
+                className="text-lg font-medium text-slate-900"
+                onClick={(e) => handleNavClick(e, item.id)}
+              >
+                {item.name}
+              </a>
+            ),
+          )}
           <div className="pt-4 border-t border-slate-100 flex flex-col gap-4">
             <button
               onClick={() => switchLocale(locale === "cs" ? "en" : "cs")}
