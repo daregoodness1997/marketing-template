@@ -7,6 +7,7 @@ Reusable Next.js marketing website template with i18n, GDPR consent, GTM, and st
 - **Next.js 16** — Static export (`output: "export"`)
 - **Tailwind CSS 4.1** — `@theme` design tokens in `globals.css`
 - **next-intl 4** — Czech (default) + English, `localePrefix: "as-needed"`
+- **Intlayer 8** — Translation management with JSON sync plugin
 - **Motion** — Scroll-triggered section animations
 - **React Hook Form + Zod** — Contact form with server-validated schema
 - **GTM Consent Mode v2** — GDPR-compliant analytics with granular categories
@@ -30,6 +31,22 @@ npm run build
 ```
 
 The static output lands in `out/`.
+
+## Intlayer Setup
+
+This project uses `intlayer.config.ts` to connect message files and AI-assisted key generation.
+
+- Messages are read from `src/messages/<locale>.json` via `@intlayer/sync-json-plugin`
+- Current locales are configured as `cs` and `en`
+- Dev command uses Intlayer watch mode: `npm run dev` runs `intlayer watch --with 'next dev'`
+
+Optional AI provider environment variables for Intlayer:
+
+- `ANTHROPIC_API_KEY` (preferred if set)
+- `GOOGLE_API_KEY` (used if Anthropic key is not set)
+- `OPENAI_API_KEY` (fallback)
+
+If none are set, Intlayer still runs, but AI-assisted workflows will be unavailable.
 
 ## Customization Checklist
 
@@ -86,9 +103,10 @@ src/
 ## Adding a New Locale
 
 1. Add the locale code to `src/i18n/routing.ts` → `locales` array
-2. Create `src/messages/<locale>.json` (copy from `en.json`)
-3. Add alternate URLs in `src/app/sitemap.ts`
-4. Update `not-found.tsx` copy object
+2. Add the same locale code to `internationalization.locales` in `intlayer.config.ts`
+3. Create `src/messages/<locale>.json` (copy from `en.json`)
+4. Add alternate URLs in `src/app/sitemap.ts`
+5. Update `not-found.tsx` copy object
 
 ## Adding a New Section
 
