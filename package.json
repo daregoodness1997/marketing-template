@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "intlayer watch --with 'next dev'",
+    "intlayer:fill": "node scripts/intlayer-fill-fallback.mjs",
     "build": "next build",
     "postbuild": "cp out/cs/index.html out/index.html && cp web.config out/web.config",
     "start": "next start",
