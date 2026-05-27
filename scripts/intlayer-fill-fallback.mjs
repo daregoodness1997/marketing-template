@@ -44,7 +44,10 @@ function runFill(provider, args, env, label) {
   });
 
   if (result.error) {
-    console.error(`[intlayer-fallback] Failed to start ${label}:`, result.error.message);
+    console.error(
+      `[intlayer-fallback] Failed to start ${label}:`,
+      result.error.message,
+    );
     return 1;
   }
 
@@ -57,8 +60,10 @@ const envFromFile = existsSync(envFile)
   ? parseDotEnv(readFileSync(envFile, "utf8"))
   : {};
 
-const googleKey = process.env.GOOGLE_API_KEY || envFromFile.GOOGLE_API_KEY || "";
-const openAiKey = process.env.OPENAI_API_KEY || envFromFile.OPENAI_API_KEY || "";
+const googleKey =
+  process.env.GOOGLE_API_KEY || envFromFile.GOOGLE_API_KEY || "";
+const openAiKey =
+  process.env.OPENAI_API_KEY || envFromFile.OPENAI_API_KEY || "";
 
 const userArgs = process.argv.slice(2);
 const baseArgs = [...userArgs];
@@ -94,7 +99,9 @@ for (const attempt of attempts) {
     process.exit(0);
   }
 
-  console.warn(`[intlayer-fallback] ${attempt.label} failed with exit code ${status}.`);
+  console.warn(
+    `[intlayer-fallback] ${attempt.label} failed with exit code ${status}.`,
+  );
 }
 
 console.error("[intlayer-fallback] All providers failed.");
